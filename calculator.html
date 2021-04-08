@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+    <script src="./calculator.js"></script>
+
+    <script src="https://kit.fontawesome.com/d4a52177dc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <form name="calculator">
+
+        <table>
+
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="screen" size="16" id="screen" class="screen" value="" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="digit" id="1" name="1" value="1" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="digit" id="2" name="2" value="2" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="digit" id="3" name="3" value="3" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="operator" name="plus" value="+" onclick="insertOperator(value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="digit" id="4" name="4" value="4" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="digit" id="5" name="5" value="5" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="digit" id="6" name="6" value="6" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="operator" name="minus" value="-" onclick="insertOperator(value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="digit" id="7" name="7" value="7" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="digit" id="8" name="8" value="8" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="digit" id="9" name="9" value="9" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="operator" name="times" value="*" onclick="insertOperator(value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" id="clear" name="clear" value="C" onclick="clearDisplay()"></td>
+                <td><input type="button" class="digit" id="0" name="0" value="0" onclick="insertNumber(value)"></td>
+                <td><input type="button" class="equal" name="equal" value="=" onclick="performOperation(value)"></td>
+                <td><input type="button" class="operator" name="div" value="/" onclick="insertOperator(value)"></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <footer>
+
+        Calculator - Carolina Abreu
+
+        <span class="space"></span>
+
+        <a href="https://github.com/CarolinaAbreu19" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ana-carolina-silva-abreu-80325a195/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+    </footer>
+
+</body>
+
+</html>
