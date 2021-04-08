@@ -146,9 +146,3 @@ And with that, you will have the functions of your calculator. You can think of 
 ## Contact
 
 Carolina Abreu - [Linkedin](https://www.linkedin.com/in/ana-carolina-silva-abreu-80325a195/) - anacarolinaks19@gmail.com
-=======
-# calculator
-A simple calculator using HTML, CSS and Javascript
-
-To execute the project, just run the calculator.html file
->>>>>>> efdb2ef07236cdcc8dcc129cff8061d910cfd96c
