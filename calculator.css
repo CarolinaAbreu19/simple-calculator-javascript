@@ -14,8 +14,11 @@ body {
 
 .calculator {
     background-color: #ef8354;
+
+    padding: 10px 20px;
     width: 30vw;
     height: 60vh;
+
     border-radius: 5px;
 }
 
@@ -58,20 +61,19 @@ input {
     background-color: #ff9fa8;
 }
 
-#screen {
-    width: 290px;
+.calculator__display {
     font-size: 26px;
     text-align: center;
+
+    padding: 15px 20px;
+
     background-color: #f1faeb;
-    float: left;
+
+    border-radius: 5px;
 }
-/* answer hover effect */
-#screen:hover {
-    width: 290px;
-    font-size: 26px;
-    text-align: center;
+
+.calculator__display:hover {
     box-shadow: 0 4px rgba(0,0,0,0.2);
-    background-color: #f1faeb;
 }
 
 /* add input hover effectg */
