@@ -1,14 +1,21 @@
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     background-color: #4f5d75;
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
+.calculator {
     background-color: #ef8354;
-    width: 320px;
-    height: 325px;
-    text-align: center;
+    width: 30vw;
+    height: 60vh;
     border-radius: 5px;
 }
 
@@ -30,7 +37,7 @@ input {
     border-radius: 5px;
 }
 
-h1 {
+.page__title {
     text-align: center;
     font-size: 50px;
     font-family: 'Open Sans';
