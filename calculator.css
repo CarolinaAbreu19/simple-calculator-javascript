@@ -16,6 +16,13 @@ input {
     all: unset;
 }
 
+.page__title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+}
+
 .calculator {
     background-color: #ef8354;
 
@@ -24,6 +31,21 @@ input {
     height: 60vh;
 
     border-radius: 5px;
+}
+
+.calculator__display {
+    font-size: 26px;
+    text-align: center;
+
+    padding: 15px 20px;
+
+    background-color: #f1faeb;
+
+    border-radius: 5px;
+}
+
+.calculator__display:hover {
+    box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
 .calculator__rows {
@@ -53,57 +75,21 @@ input {
 
     border-radius: 5px;
     box-shadow: 0 4px rgba(0,0,0,0.2);
+
+    cursor: pointer;
 }
 
-/* input {
-    outline: 0;
-    border: 0;
-    color: #2d3142;
-    background-color: #ffffff;
-    width: 60px;
-    height: 50px;
-    float: left;
-    margin: 5px;
-    font-size: 20px;
-    box-shadow: 0 4px rgba(0,0,0,0.2);
-    margin-bottom: 15px;
-    border-radius: 5px;
-} */
-
-.page__title {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Open Sans';
-    color: #ffffff;
-}
-
-.operator {
+.--operator {
     background-color: #f1ff92;
     position: relative;
     
 }
 
-
-#clear {
+.--clear {
     float: left;
     position: relative;
     display: block;
     background-color: #ff9fa8;
-}
-
-.calculator__display {
-    font-size: 26px;
-    text-align: center;
-
-    padding: 15px 20px;
-
-    background-color: #f1faeb;
-
-    border-radius: 5px;
-}
-
-.calculator__display:hover {
-    box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
 /* add input hover effectg */
