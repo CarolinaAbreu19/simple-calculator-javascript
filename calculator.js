@@ -14,6 +14,7 @@ const entry = {
 
 let firstNumChoose = false;
 let secondNumChoose = false;
+let operationChoose = false;
 
 clearButton.addEventListener("click", () => {
     display.value = 0;
@@ -23,6 +24,7 @@ clearButton.addEventListener("click", () => {
     entry.result = 0;
     firstNumChoose = false;
     secondNumChoose = false;
+    operationChoose = false;
 });
 
 answerButton.addEventListener("click", () => {
@@ -30,6 +32,8 @@ answerButton.addEventListener("click", () => {
         display.value = "Syntax error";
     }
     else {
+        entry.firstNum = parseInt(entry.firstNum);
+        entry.secondNum = parseInt(entry.secondNum);
         switch(entry.operation) {
             case "+":
                 entry.result = entry.firstNum + entry.secondNum;
@@ -44,13 +48,45 @@ answerButton.addEventListener("click", () => {
                 entry.result = entry.firstNum / entry.secondNum;
                 break;
             default:
-                display.value = "Error";
+                entry.result = "Error";
         }
+        display.value = entry.result;
     }
 });
 
 operatorButtons.forEach(operator => {
     operator.addEventListener("click", (event) => {
         entry.operation = event.target.value;
+        operationChoose = true;
     })
 });
+
+numButtons.forEach(button => {
+
+    button.addEventListener("click", (event) => {
+
+        if(!firstNumChoose || !entry.operation) {
+            firstNumChoose = true;
+            entry.firstNum += event.target.value;
+            
+            if(display.value === "0") {
+                display.value = event.target.value;
+            } else {
+                display.value += event.target.value;
+            }
+        }
+
+        if(firstNumChoose && entry.operation) {
+            secondNumChoose = true;
+            if(operationChoose) {
+                display.value = event.target.value;
+                operationChoose = false;
+            } else {
+                display.value += event.target.value;
+            }
+            entry.secondNum += event.target.value;
+        }
+
+    })
+
+})
