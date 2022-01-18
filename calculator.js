@@ -48,3 +48,9 @@ answerButton.addEventListener("click", () => {
         }
     }
 });
+
+operatorButtons.forEach(operator => {
+    operator.addEventListener("click", (event) => {
+        entry.operation = event.target.value;
+    })
+});
