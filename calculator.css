@@ -1,114 +1,104 @@
 body {
-    background-color: #4f5d75;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ef8354;
-    width: 320px;
-    height: 325px;
-    text-align: center;
-    border-radius: 5px;
+    background-color: #4f5d75;
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 input {
-    outline: 0;
-    position: relative;
-    left: 5px;
-    top: 5px;
-    border: 0;
-    color: #2d3142;
-    background-color: #ffffff;
-    width: 60px;
-    height: 50px;
-    float: left;
-    margin: 5px;
-    font-size: 20px;
-    box-shadow: 0 4px rgba(0,0,0,0.2);
-    margin-bottom: 15px;
-    border-radius: 5px;
+    all: unset;
 }
 
-h1 {
+.page__title {
     text-align: center;
     font-size: 50px;
     font-family: 'Open Sans';
     color: #ffffff;
 }
 
-.operator {
-    background-color: #f1ff92;
-    position: relative;
-    
+.calculator {
+    background-color: #ef8354;
+
+    padding: 10px 20px;
+    width: 30vw;
+    height: 60vh;
+
+    border-radius: 5px;
 }
 
-
-#clear {
-    float: left;
-    position: relative;
-    display: block;
-    background-color: #ff9fa8;
-}
-
-#screen {
-    width: 290px;
+.calculator__display {
     font-size: 26px;
     text-align: center;
+
+    padding: 15px 20px;
+
     background-color: #f1faeb;
-    float: left;
+
+    border-radius: 5px;
 }
-/* answer hover effect */
-#screen:hover {
-    width: 290px;
-    font-size: 26px;
-    text-align: center;
+
+.calculator__display:hover {
     box-shadow: 0 4px rgba(0,0,0,0.2);
-    background-color: #f1faeb;
 }
 
-/* add input hover effectg */
-input:hover {
-    border: 0 solid #000;
-    color: #495069;
-    background-color: #BFC0C0;
-    border-radius: 4px;
+.calculator__rows {
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+
+    margin-top: 5vh;
+}
+
+.row__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculator__button {
+    font-size: 20px;
+    text-align: center;
+
     width: 60px;
     height: 50px;
-    float: left;
-    margin: 5px;
-    font-size: 20px;
+
+    color: #2d3142;
+    background-color: #ffffff;
+
+    border-radius: 5px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+
+    cursor: pointer;
+}
+
+.calculator__button:hover {
+    color: #495069;
+    background-color: #BFC0C0;
     box-shadow: 0 4px #BFb0b0;
 }
-/* hover */
-.operator:hover {
+
+.--operator {
+    background-color: #f1ff92;    
+}
+
+.--operator:hover {
     background-color: #e7f56b;
     box-shadow: 0 4px #b7c259;
 }
-/* hover */
-#clear:hover {
-    float: left;
-    display: block;
+
+.--clear {
+    background-color: #ff9fa8;
+}
+
+.--clear:hover {
     background-color: #f297a0;
-    margin-bottom: 15px;
     box-shadow: 0 4px #cc7f86;
-}
-
-footer {
-    margin-top: 6%;
-    position: relative;
-    font-family: 'Open Sans';
-    text-decoration: none;
-    color: #ffffff;
-}
-
-footer a {
-    text-align: right;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 15px;
-}
-
-.space {
-    margin: 35%;
 }
