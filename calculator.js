@@ -24,3 +24,27 @@ clearButton.addEventListener("click", () => {
     firstNumChoose = false;
     secondNumChoose = false;
 });
+
+answerButton.addEventListener("click", () => {
+    if(!secondNumChoose) {
+        display.value = "Syntax error";
+    }
+    else {
+        switch(entry.operation) {
+            case "+":
+                entry.result = entry.firstNum + entry.secondNum;
+                break;
+            case "-":
+                entry.result = entry.firstNum - entry.secondNum;
+                break;
+            case "*":
+                entry.result = entry.firstNum * entry.secondNum;
+                break;
+            case "/":
+                entry.result = entry.firstNum / entry.secondNum;
+                break;
+            default:
+                display.value = "Error";
+        }
+    }
+});
