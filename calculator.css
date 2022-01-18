@@ -50,7 +50,7 @@ input {
 
 .calculator__rows {
     display: flex;
-    gap: 15px;
+    gap: 5vh;
     flex-direction: column;
 
     margin-top: 5vh;
