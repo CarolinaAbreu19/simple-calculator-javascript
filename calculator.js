@@ -1,3 +1,2 @@
 const display = document.querySelector(".calculator__display");
-
-display.textContent = "0";
+const rowButtons = document.querySelector(".row__buttons");

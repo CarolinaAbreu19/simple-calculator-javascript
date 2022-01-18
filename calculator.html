@@ -25,12 +25,35 @@
 
             <thead>
                 <tr>
-                    <th colspan="4" class="calculator__display"></th>
+                    <th colspan="4"><input type="text" value="0" class="calculator__display" disabled></th>
                 </tr>
             </thead>
 
-            <tbody>
-
+            <tbody class="calculator__rows">
+                <tr class="row__buttons">
+                    <td><input type="button" value="1" class="calculator__button --number"></td>
+                    <td><input type="button" value="2" class="calculator__button --number"></td>
+                    <td><input type="button" value="3" class="calculator__button --number"></td>
+                    <td><input type="button" value="+" class="calculator__button --operator"></td>
+                </tr>
+                <tr class="row__buttons">
+                    <td><input type="button" value="4" class="calculator__button --number"></td>
+                    <td><input type="button" value="5" class="calculator__button --number"></td>
+                    <td><input type="button" value="6" class="calculator__button --number"></td>
+                    <td><input type="button" value="-" class="calculator__button --operator"></td>
+                </tr>
+                <tr class="row__buttons">
+                    <td><input type="button" value="7" class="calculator__button --number"></td>
+                    <td><input type="button" value="8" class="calculator__button --number"></td>
+                    <td><input type="button" value="9" class="calculator__button --number"></td>
+                    <td><input type="button" value="*" class="calculator__button --operator"></td>
+                </tr>
+                <tr class="row__buttons">
+                    <td><input type="button" value="C" class="calculator__button --clear"></td>
+                    <td><input type="button" value="0" class="calculator__button --number"></td>
+                    <td><input type="button" value="=" class="calculator__button --result"></td>
+                    <td><input type="button" value="/" class="calculator__button --operator"></td>
+                </tr>
             </tbody>
 
         </table>
